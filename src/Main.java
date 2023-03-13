@@ -12,17 +12,14 @@ public class Main {
 
 
 
-        Comparator<String> y = new Comparator<String>() {
-            @Override
-            public int compare(String a, String b) {
-                if (a.length() < b.length()) {
-                    return -1;
-                } else if (a.length() > b.length()) {
-                    return 1;
+        Comparator<String> y = (a, b) -> {
+            if (a.length() < b.length()) {
+                return -1;
+            } else if (a.length() > b.length()) {
+                return 1;
 
-                } else {
-                    return 0;
-                }
+            } else {
+                return 0;
             }
         };
 
