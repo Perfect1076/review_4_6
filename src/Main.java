@@ -31,8 +31,10 @@ public class Main {
         test.add("coolioooooooo!");
 
 
-     System.out.println(   maximum(test, y));
+     System.out.println(maximum(test, y));
     }
+
+
 
     public static String maximum(ArrayList<String> x, Comparator<String> y) {
         String temp = "";
